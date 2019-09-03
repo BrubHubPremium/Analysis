@@ -27,4 +27,3 @@ wb_command -surface-resample ${submid} ${subsph} ${newsph} BARYCENTRIC ${outmid}
 done
 done
 done
-done

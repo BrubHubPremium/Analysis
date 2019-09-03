@@ -10,9 +10,6 @@ rendered=${jdir}/maskpics/rendered
 site=`echo $monk | cut -d "/" -f1`
 subject=`echo $monk | cut -d "/" -f2`
 
-# anatimg=${jdir}/data/${site}/${subject}/anat_avg/${subject}_T1w_denoise_N4_anat_avg.nii.gz
-# maskimg=${jdir}/data/${site}/${subject}/anat_avg/${subject}_T1w_denoise_N4_anat_avg_brainmask_afni.nii.gz
-
 anatimg=${jdir}/data/${site}/${subject}/anat_avg/ants/${subject}_T1w_denoise_N4_anat_avg.nii.gz
 maskimg=${jdir}/data/${site}/${subject}/anat_avg/ants/${subject}_T1w_denoise_N4_anat_avg_mask.nii.gz
 

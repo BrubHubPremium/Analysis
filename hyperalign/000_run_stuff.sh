@@ -14,6 +14,7 @@ cat lists/anna_pp_subs.list | parallel -j 30 "python /data3/cdb/jcho/hcp180/scri
 
 # Parcellate using HCP MMP parcellation (360):
 cd /data3/cdb/jcho/hcp180 # input is scans: 'sub/task/dtseries.nii'
-ls */*/*R1LRRL* | parallel -j 30 "/data3/cdb/jcho/hcp180/scripts/001_iccprep_create_pconn.sh"
+ls */*/*R1LRRL* | parallel -j 25 "/data3/cdb/jcho/hcp180/scripts/001_iccprep_create_pconn.sh {} '_R1LRRL'" # hyperaligned
+ls */*/*sm6.dtseries.nii* | parallel -j 25 "/data3/cdb/jcho/hcp180/scripts/001_iccprep_create_pconn.sh {} ''" # anatomy
 
 # ICC and Discriminability analysis:
